@@ -1,6 +1,6 @@
 
-import campusCompass from "../assets/projects/campusCompass.png";
-import skillSync from "../assets/projects/skillSync.png";
+import campusCompass from "../assets/projects/CampusCompass.png";
+import skillSync from "../assets/projects/Skillsync.png";
 
 
 
