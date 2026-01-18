@@ -31,7 +31,7 @@ export const SocialLinks = [
         hoverColor: "hover:text-sky-500",
     },
     {
-        icon: <img src={yt} alt="YT" className="w-10 md:w-9" />,
+        icon: <img src={yt} alt="YT" className="w-8 md:w-9" />,
         href: "https://www.youtube.com/@prathmesh-tech",
         label: "YouTube",
         hoverColor: "hover:text-sky-500",
