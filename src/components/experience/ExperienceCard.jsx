@@ -54,9 +54,10 @@ const ExperienceCard = ({ item }) => {
               <div className="flex gap-4">
                 {/* ICON */}
                 <div className="w-11 h-11 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 flex items-center justify-center shadow-sm">
-                  <Briefcase
-                    size={20}
-                    className="text-slate-700 dark:text-slate-300"
+                  <img
+                    src={item.companyLogo}
+                    alt="logo"
+                    className="rounded-lg"
                   />
                 </div>
 
@@ -88,7 +89,7 @@ const ExperienceCard = ({ item }) => {
               {/* CHEVRON */}
               <ChevronDown
                 size={20}
-                className={`mt-1 text-slate-400 transition-transform duration-300 ${
+                className={`mt-1 text-slate-400 transition-transform duration-300 cursor-pointer ${
                   isOpen ? "rotate-180" : ""
                 }`}
               />
@@ -128,14 +129,14 @@ const ExperienceCard = ({ item }) => {
 
                       <div className="flex flex-wrap gap-2">
                         {item.technologies.map((key, idx) => {
-  const tech = techMap[key];
+                          const tech = techMap[key];
 
-  if (!tech) return null;
+                          if (!tech) return null;
 
-  return (
-    <span
-      key={idx}
-      className="
+                          return (
+                            <span
+                              key={idx}
+                              className="
         flex items-center gap-2
         px-3 py-1 rounded-md text-xs font-semibold
         bg-white dark:bg-slate-900
@@ -143,17 +144,16 @@ const ExperienceCard = ({ item }) => {
         text-slate-700 dark:text-slate-300
         shadow-sm
       "
-    >
-      <img
-        src={tech.icon}
-        alt={tech.label}
-        className="w-4 h-4 object-contain"
-      />
-      {tech.label}
-    </span>
-  );
-})}
-
+                            >
+                              <img
+                                src={tech.icon}
+                                alt={tech.label}
+                                className="w-4 h-4 object-contain"
+                              />
+                              {tech.label}
+                            </span>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>

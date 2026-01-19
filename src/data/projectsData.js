@@ -20,7 +20,7 @@ export const projectsData = [
       "Dockerized backend services and automated build and deployment pipelines using GitHub Actions CI/CD."
     ],
     image: campusCompass,
-    tags: ["React", "Node.js", "Express", "MongoDB", "Flask", "Redux Toolkit", "Docker", "GitHub Actions"],
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "Flask", "Redux Toolkit", "Docker", "GitHub Actions"],
     liveUrl: "https://campus-compass-frontend-sepia.vercel.app/", // replace if different
     githubUrl: "https://campus-compass-frontend-sepia.vercel.app/"
   },

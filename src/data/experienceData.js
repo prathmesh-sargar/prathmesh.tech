@@ -1,9 +1,14 @@
+import collabV from '../assets/companyLogo/collabV.jpg';
+import gspInnovations from '../assets/companyLogo/jsp.jpg';
+import freelance from '../assets/companyLogo/freelancer.jpg';
+
 export const ExperienceData = [
 
   {
     id: '1',
     role: "Freelance - Full Stack Developer (MERN)",
     company: "Self Employed",
+    companyLogo: freelance,
     type: "Remote",
     date: "Jan 2024 - Present",
     location: "Remote",
@@ -18,6 +23,7 @@ export const ExperienceData = [
     id: '2',
     role: "React.js Developer Intern",
     company: "GSP Innovations",
+    companyLogo: gspInnovations,
     type: "Hybrid",
     date: "Nov 2025 - Jan 2026",
     location: "Hybrid",
@@ -34,6 +40,7 @@ export const ExperienceData = [
     id: '3',
     role: "Software Trainee Intern",
     company: "Collab Vision Infosolution",
+    companyLogo: collabV,
     type: "Remote",
     date: "Feb 2025 - Aug 2025",
     location: "Remote",

@@ -25,12 +25,22 @@ const ExperiencePage = () => {
             {/* Header */}
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <div>
-                <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+                {/* ICON */}
+               <div className="flex gap-3 justify-center ">
+                 <div className="w-11 h-11 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 flex items-center justify-center shadow-sm">
+                  <img src={exp.companyLogo} alt="logo" className="rounded-lg" />
+                </div>
+
+                <div>
+                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
                   {exp.role}
                 </h2>
                 <p className="text-sm text-gray-600 dark:text-gray-400">
                   {exp.company} • {exp.type}
                 </p>
+                </div>
+               </div>
+
               </div>
 
               <span className="text-sm text-gray-500 dark:text-gray-400">

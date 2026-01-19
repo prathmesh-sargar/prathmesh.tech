@@ -54,7 +54,7 @@ const Hero = () => {
             align="center"
             className="text-neutral-500 dark:text-neutral-400"
           >
-            A Full Stack developer.
+            A Full Stack Engineer.
           </TypingText>
         </h1>
         <p className="mt-3 font-semibold dark:font-medium text-[17px] text-gray-700 dark:text-gray-400 max-w-xl">

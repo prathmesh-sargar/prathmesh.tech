@@ -11,7 +11,7 @@ const ResumeButton = () => {
       <button
         onClick={() => setOpen(true)}
         className="
-          flex items-center gap-2 px-4 py-2
+          flex items-center gap-2 px-4 py-2 cursor-pointer
           rounded-md font-medium
           bg-black text-white
           hover:opacity-90 transition border border-black dark:bg-white dark:text-black dark:border-white

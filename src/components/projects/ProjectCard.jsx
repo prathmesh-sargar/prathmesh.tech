@@ -4,6 +4,8 @@ import { Lens } from "../../ui/lightswind/lens";
 import { TbLoader2 } from "react-icons/tb";
 import { BiGlobe } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
+import { techMap } from "../../data/techMap";
+import { Code2 } from "lucide-react";
 
 const ProjectCard = ({ project, index }) => {
   const navigate = useNavigate();
@@ -61,7 +63,7 @@ const ProjectCard = ({ project, index }) => {
         </p>
 
         {/* TAGS */}
-        <div className="mt-4 flex flex-wrap gap-2">
+        {/* <div className="mt-4 flex flex-wrap gap-2">
           {project.tags.slice(0, 5).map((tech, i) => (
             <span
               key={i}
@@ -75,6 +77,38 @@ const ProjectCard = ({ project, index }) => {
               {tech}
             </span>
           ))}
+        </div> */}
+        <div>
+    
+
+          <div className="flex flex-wrap gap-2 mt-2">
+            {project.tags.map((key, idx) => {
+              const tech = techMap[key];
+
+              if (!tech) return null;
+
+              return (
+                <span
+                  key={idx}
+                  className="
+        flex items-center gap-2
+        px-3 py-1 rounded-md text-xs font-semibold
+        bg-white dark:bg-slate-900
+        border border-slate-200 dark:border-slate-700
+        text-slate-700 dark:text-slate-300
+        shadow-sm
+      "
+                >
+                  <img
+                    src={tech.icon}
+                    alt={tech.label}
+                    className="w-4 h-4 object-contain"
+                  />
+                  {tech.label}
+                </span>
+              );
+            })}
+          </div>
         </div>
 
         {/* ACTIONS */}
