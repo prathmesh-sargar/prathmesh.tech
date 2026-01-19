@@ -1,4 +1,5 @@
 import { ExperienceData } from "../data/experienceData";
+import { techMap } from "../data/techMap";
 
 const ExperiencePage = () => {
   return (
@@ -43,18 +44,38 @@ const ExperiencePage = () => {
                 <li key={idx}>{point}</li>
               ))}
             </ul>
+            <br />
 
             {/* Tech Stack */}
-            <div className="flex flex-wrap gap-2 pt-4">
-              {exp.technologies.map((tech, idx) => (
-                <span
-                  key={idx}
-                  className="text-xs px-2.5 py-1 rounded-full bg-gray-100 dark:bg-neutral-900 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-neutral-800"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <div className="flex flex-wrap gap-2">
+                        {exp.technologies.map((key, idx) => {
+  const tech = techMap[key];
+
+  if (!tech) return null;
+
+  return (
+    <span
+      key={idx}
+      className="
+        flex items-center gap-2
+        px-3 py-1 rounded-md text-xs font-semibold
+        bg-white dark:bg-slate-900
+        border border-slate-200 dark:border-slate-700
+        text-slate-700 dark:text-slate-300
+        shadow-sm
+      "
+    >
+      <img
+        src={tech.icon}
+        alt={tech.label}
+        className="w-4 h-4 object-contain"
+      />
+      {tech.label}
+    </span>
+  );
+})}
+
+                      </div>
           </div>
         ))}
       </div>

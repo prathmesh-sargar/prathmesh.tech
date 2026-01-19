@@ -1,5 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { techMap } from "../../data/techMap";
+
 import {
   Briefcase,
   Building2,
@@ -125,20 +127,33 @@ const ExperienceCard = ({ item }) => {
                       </h4>
 
                       <div className="flex flex-wrap gap-2">
-                        {item.technologies.map((tech, idx) => (
-                          <span
-                            key={idx}
-                            className="
-                              px-3 py-1 rounded-md text-xs font-semibold
-                              bg-white dark:bg-slate-900
-                              border border-slate-200 dark:border-slate-700
-                              text-slate-700 dark:text-slate-300
-                              shadow-sm
-                            "
-                          >
-                            {tech}
-                          </span>
-                        ))}
+                        {item.technologies.map((key, idx) => {
+  const tech = techMap[key];
+
+  if (!tech) return null;
+
+  return (
+    <span
+      key={idx}
+      className="
+        flex items-center gap-2
+        px-3 py-1 rounded-md text-xs font-semibold
+        bg-white dark:bg-slate-900
+        border border-slate-200 dark:border-slate-700
+        text-slate-700 dark:text-slate-300
+        shadow-sm
+      "
+    >
+      <img
+        src={tech.icon}
+        alt={tech.label}
+        className="w-4 h-4 object-contain"
+      />
+      {tech.label}
+    </span>
+  );
+})}
+
                       </div>
                     </div>
                   </div>
