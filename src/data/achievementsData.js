@@ -10,7 +10,7 @@ import startup from "../assets/achievement/startup.jpg";
 export const achievementStats = [
   { label: "National-Level Wins", value: "8×" },
   { label: "Prize Money Won", value: "₹35k+" },
-  { label: "Students Mentored", value: "1000+" },
+  { label: "Students Mentored", value: "5000+" },
     { label: "College Fees Paid Independently", value: "3rd Year" },
 ];
 

@@ -104,59 +104,93 @@ const ExperienceCard = ({ item }) => {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.25, ease: "easeInOut" }}
                 >
-                  <div className="px-5 md:px-6 pb-6">
-                    <div className="h-px w-full bg-slate-200 dark:bg-slate-700 mb-5" />
+                  {/* CONTENT */}
+<div className="px-5 md:px-6 pb-6">
+  <div className="h-px w-full bg-slate-200 dark:bg-slate-700 mb-5" />
 
-                    {/* BULLETS */}
-                    <ul className="space-y-3 mb-6">
-                      {item.bullets.map((bullet, idx) => (
-                        <li
-                          key={idx}
-                          className="flex gap-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed"
-                        >
-                          <span className="mt-2 w-1.5 h-1.5 rounded-full bg-slate-400 dark:bg-slate-500 flex-shrink-0" />
-                          {bullet}
-                        </li>
-                      ))}
-                    </ul>
+  {/* PROJECT-BASED FREELANCE */}
+  {item.projects && (
+    <div className="space-y-6">
+      {item.projects.map((project, idx) => (
+        <div key={idx}>
+          <h4 className="text-sm font-bold text-slate-900 dark:text-white">
+            {project.name}
+          </h4>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
+            Client: {project.client}
+          </p>
 
-                    {/* TECH STACK */}
-                    <div>
-                      <h4 className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-3">
-                        <Code2 size={14} />
-                        Technologies
-                      </h4>
+          <ul className="space-y-2 mb-3">
+            {project.description.map((point, i) => (
+              <li
+                key={i}
+                className="flex gap-3 text-sm text-slate-600 dark:text-slate-300"
+              >
+                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-slate-400 flex-shrink-0" />
+                {point}
+              </li>
+            ))}
+          </ul>
 
-                      <div className="flex flex-wrap gap-2">
-                        {item.technologies.map((key, idx) => {
-                          const tech = techMap[key];
+          <div className="flex flex-wrap gap-2">
+            {project.technologies.map((key, i) => {
+              const tech = techMap[key];
+              if (!tech) return null;
 
-                          if (!tech) return null;
+              return (
+                <span
+                  key={i}
+                  className="flex items-center gap-2 px-3 py-1 rounded-md text-xs font-semibold
+            bg-white dark:bg-slate-900
+            border border-slate-200 dark:border-slate-700
+            text-slate-700 dark:text-slate-300"
+                >
+                  <img src={tech.icon} alt={tech.label} className="w-4 h-4" />
+                  {tech.label}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  )}
 
-                          return (
-                            <span
-                              key={idx}
-                              className="
-        flex items-center gap-2
-        px-3 py-1 rounded-md text-xs font-semibold
-        bg-white dark:bg-slate-900
-        border border-slate-200 dark:border-slate-700
-        text-slate-700 dark:text-slate-300
-        shadow-sm
-      "
-                            >
-                              <img
-                                src={tech.icon}
-                                alt={tech.label}
-                                className="w-4 h-4 object-contain"
-                              />
-                              {tech.label}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </div>
+  {/* BULLET-BASED INTERNSHIPS */}
+  {item.bullets && (
+    <>
+      <ul className="space-y-3 mb-6">
+        {item.bullets.map((bullet, idx) => (
+          <li key={idx} className="flex gap-3 text-sm text-slate-600 dark:text-slate-300">
+            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-slate-400 flex-shrink-0" />
+            {bullet}
+          </li>
+        ))}
+      </ul>
+
+      <div className="flex flex-wrap gap-2">
+        {item.technologies.map((key, idx) => {
+          const tech = techMap[key];
+          if (!tech) return null;
+
+          return (
+            <span
+              key={idx}
+              className="flex items-center gap-2 px-3 py-1 rounded-md text-xs font-semibold
+            bg-white dark:bg-slate-900
+            border border-slate-200 dark:border-slate-700
+            text-slate-700 dark:text-slate-300"
+            >
+              <img src={tech.icon} alt={tech.label} className="w-4 h-4" />
+              {tech.label}
+            </span>
+          );
+        })}
+      </div>
+    </>
+  )}
+</div>
+
                 </motion.div>
               )}
             </AnimatePresence>

@@ -24,6 +24,9 @@ import zustand from "../assets/skills/zustand.png";
 import reactquery from "../assets/skills/query.png"
 import aws from "../assets/skills/aws.jpg"
 import githubaction from "../assets/skills/ga.png"
+import mysql from "../assets/skills/mysql.png"
+import flask from "../assets/skills/flask.png"
+import NLTK from "../assets/skills/nltk.png"
 
 
 export const techMap = {
@@ -51,4 +54,7 @@ export const techMap = {
   "React Query": { label: "React Query", icon: reactquery },
   "AWS EC2": { label: "AWS EC2", icon: aws },
   "GitHub Actions": { label: "GitHub Actions", icon: githubaction },
+  MySQL: { label: "MySQL", icon: mysql },
+  Flask: { label: "Flask", icon: flask },
+  NLTK: { label: "NLTK", icon: NLTK },
 };
