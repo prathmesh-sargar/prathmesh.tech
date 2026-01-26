@@ -53,7 +53,6 @@
 //     technologies: ["Node.js", "Express.js", "React", "Docker", "AWS EC2", "GitHub Actions"]
 //   }
 
-
 // ];
 
 import collabV from "../assets/companyLogo/collabV.jpg";
@@ -63,8 +62,8 @@ import freelance from "../assets/companyLogo/freelancer.jpg";
 export const ExperienceData = [
   {
     id: "freelance",
-    role: "Freelance Web Developer",
-    company: "Self-Employed",
+    role: "Freelance Work",
+    company: "Independent Consultant",
     companyLogo: freelance,
     type: "Remote",
     date: "Jan 2024 – Present",
@@ -72,42 +71,62 @@ export const ExperienceData = [
 
     projects: [
       {
-        name: "QuickLearn",
-        client: "DYPCET First Year Student Helpdesk",
+        name: "AI Lead Generation & Outreach Automation",
+        client: "SMEs & Growth Teams (Freelance)",
         description: [
-          "Built an educational web platform providing subject notes and previous-year question papers for first-year engineering students.",
-          "Implemented a JavaScript-based academic chatbot to assist students with basic queries."
+          "Built an end-to-end AI-powered lead generation system that automatically scrapes Google Maps business data and extracts emails and websites.",
+          "Orchestrated multi-step workflows using n8n, integrating Serper API, email validation, OpenAI personalization, and WhatsApp/email outreach.",
+          "Implemented AI-based lead enrichment and message personalization to improve reply rates and reduce manual prospecting time.",
+          "Designed a reply-tracking and follow-up engine with conditional logic, retries, and webhooks to ensure reliable automation at scale.",
         ],
-        technologies: ["HTML", "CSS", "JavaScript","Firebase"]
-      },
-      {
-        name: "Dry Fruit Store – E-commerce Website",
-        client: "College Student (Freelance)",
-        description: [
-          "Developed a basic e-commerce website with product listings and cart functionality.",
-          "Designed and integrated a MySQL database to manage product data."
+        technologies: [
+          "n8n",
+          "Serper API",
+          "OpenAI API",
+          "Google Maps Scraping",
+          "Node.js",
+          "Webhooks",
+          "WhatsApp API",
+          "Email Automation",
         ],
-        technologies: ["HTML", "CSS", "JavaScript", "MySQL"]
-      },
-      {
-        name: "Sentiment Analysis Chatbot",
-        client: "E-commerce Product Team",
-        description: [
-          "Built a real-time sentiment analysis chatbot to classify customer feedback as positive or negative.",
-          "Integrated a Flask + NLTK machine learning backend with a React frontend."
-        ],
-        technologies: ["Flask", "React", "NLTK", "Tailwind CSS"]
       },
       {
         name: "Client CRM Web Application",
         client: "Freelance",
         description: [
           "Developed a modular and scalable CRM frontend using React with reusable components and role-based dashboards.",
-          "Managed complex state using Zustand and React Query to improve data consistency and reduce redundant API calls."
+          "Managed complex state using Zustand and React Query to improve data consistency and reduce redundant API calls.",
         ],
-        technologies: ["React", "Zustand", "React Query", "REST APIs"]
-      }
-    ]
+        technologies: ["React", "Zustand", "React Query", "REST APIs"],
+      },
+      {
+        name: "Sentiment Analysis Chatbot",
+        client: "E-commerce Product Team",
+        description: [
+          "Built a real-time sentiment analysis chatbot to classify customer feedback as positive or negative.",
+          "Integrated a Flask + NLTK machine learning backend with a React frontend.",
+        ],
+        technologies: ["Flask", "React", "NLTK", "Tailwind CSS"],
+      },
+      {
+        name: "QuickLearn",
+        client: "DYPCET First Year Student Helpdesk",
+        description: [
+          "Built an educational web platform providing subject notes and previous-year question papers for first-year engineering students.",
+          "Implemented a JavaScript-based academic chatbot to assist students with basic queries.",
+        ],
+        technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
+      },
+      {
+        name: "Dry Fruit Store – E-commerce Website",
+        client: "College Student (Freelance)",
+        description: [
+          "Developed a basic e-commerce website with product listings and cart functionality.",
+          "Designed and integrated a MySQL database to manage product data.",
+        ],
+        technologies: ["HTML", "CSS", "JavaScript", "MySQL"],
+      },
+    ],
   },
 
   {
@@ -122,9 +141,15 @@ export const ExperienceData = [
       "Designed and developed a modular CRM frontend using React with reusable components and dynamic forms.",
       "Managed client-side state with Zustand and server-state with React Query to optimize data fetching.",
       "Integrated frontend modules with Spring Boot REST APIs backed by PostgreSQL.",
-      "Improved UX by handling loading, error, and empty states and optimizing component re-renders."
+      "Improved UX by handling loading, error, and empty states and optimizing component re-renders.",
     ],
-    technologies: ["React", "Zustand", "React Query", "Spring Boot", "PostgreSQL"]
+    technologies: [
+      "React",
+      "Zustand",
+      "React Query",
+      "Spring Boot",
+      "PostgreSQL",
+    ],
   },
 
   {
@@ -139,10 +164,15 @@ export const ExperienceData = [
       "Built scalable backend services using Node.js and Express, designing RESTful APIs and validation layers.",
       "Integrated AI/ML-powered features into an EdTech platform through backend APIs.",
       "Dockerized the application and deployed it on AWS EC2 with CI/CD using GitHub Actions.",
-      "Developed a multilingual React frontend supporting four languages using i18next."
+      "Developed a multilingual React frontend supporting four languages using i18next.",
     ],
-    technologies: ["Node.js", "Express.js", "React", "Docker", "AWS EC2", "GitHub Actions"]
-  }
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "React",
+      "Docker",
+      "AWS EC2",
+      "GitHub Actions",
+    ],
+  },
 ];
-
-

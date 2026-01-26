@@ -27,6 +27,11 @@ import githubaction from "../assets/skills/ga.png"
 import mysql from "../assets/skills/mysql.png"
 import flask from "../assets/skills/flask.png"
 import NLTK from "../assets/skills/nltk.png"
+import n8n from "../assets/skills/n8n.png"
+import webscraper from "../assets/skills/webscrap.png"
+import webhook from "../assets/skills/webhooks.jpg"
+import openai from "../assets/skills/openai.png"
+import serperapi from "../assets/skills/serper.png"
 
 
 export const techMap = {
@@ -57,4 +62,9 @@ export const techMap = {
   MySQL: { label: "MySQL", icon: mysql },
   Flask: { label: "Flask", icon: flask },
   NLTK: { label: "NLTK", icon: NLTK },
+  n8n: { label: "n8n", icon: n8n },
+  "Google Maps Scraping": { label: "Google Maps Scraping", icon: webscraper },
+  "Webhooks": { label: "Webhooks", icon: webhook },
+  "OpenAI API": { label: "OpenAI API", icon: openai },
+  "Serper API": { label: "Serper API", icon: serperapi },
 };
