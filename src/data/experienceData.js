@@ -74,10 +74,10 @@ export const ExperienceData = [
         name: "AI Lead Generation & Outreach Automation",
         client: "SMEs & Growth Teams (Freelance)",
         description: [
-          "Built an end-to-end AI-powered lead generation system that automatically scrapes Google Maps business data and extracts emails and websites.",
-          "Orchestrated multi-step workflows using n8n, integrating Serper API, email validation, OpenAI personalization, and WhatsApp/email outreach.",
-          "Implemented AI-based lead enrichment and message personalization to improve reply rates and reduce manual prospecting time.",
-          "Designed a reply-tracking and follow-up engine with conditional logic, retries, and webhooks to ensure reliable automation at scale.",
+          "Built an end-to-end AI-powered lead generation system that scrapes Google Maps business data and automatically extracts verified emails and websites.",
+          "Orchestrated a fault-tolerant multi-step workflow using n8n, integrating Serper API, email validation, OpenAI-based personalization, and WhatsApp/email outreach.",
+          "Reduced manual prospecting time by ~70% by implementing AI-driven lead enrichment and dynamic message generation.",
+          "Designed a reply-tracking and automated follow-up engine using conditional logic, retries, and webhooks to support scalable outreach.",
         ],
         technologies: [
           "n8n",
