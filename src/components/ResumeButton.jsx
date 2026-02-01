@@ -31,7 +31,7 @@ const ResumeButton = () => {
 
               <div className="flex items-center gap-4">
                 <a
-                  href="https://drive.google.com/file/d/13KDolbYkSnWwJWXH2X_JM7okEdSuv9u8/view?usp=sharing"
+                  href="https://drive.google.com/file/d/140BDA4AL3bDHIWU_Fzp9BQxj9qB33IPR/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-medium underline"
@@ -50,7 +50,7 @@ const ResumeButton = () => {
 
             {/* RESUME PREVIEW */}
             <iframe
-              src="https://drive.google.com/file/d/13KDolbYkSnWwJWXH2X_JM7okEdSuv9u8/preview?usp=sharing"
+              src="https://drive.google.com/file/d/140BDA4AL3bDHIWU_Fzp9BQxj9qB33IPR/preview?usp=sharing"
               className="w-full h-full"
               title="Resume Preview"
             />
