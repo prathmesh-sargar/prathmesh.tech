@@ -5,7 +5,6 @@ import { TbLoader2 } from "react-icons/tb";
 import { BiGlobe } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import { techMap } from "../../data/techMap";
-import { Code2 } from "lucide-react";
 
 const ProjectCard = ({ project, index }) => {
   const navigate = useNavigate();

@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { techMap } from "../../data/techMap";
+import { ExternalLink } from "lucide-react";
 
 import {
   Briefcase,
@@ -113,12 +114,38 @@ const ExperienceCard = ({ item }) => {
     <div className="space-y-6">
       {item.projects.map((project, idx) => (
         <div key={idx}>
-          <h4 className="text-sm font-bold text-slate-900 dark:text-white">
+
+          <div className="md:flex md:justify-between ">
+            <div>
+              <h4 className="text-sm font-bold text-slate-900 dark:text-white">
             {project.name}
           </h4>
           <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">
             Client: {project.client}
           </p>
+            </div>
+            <div>
+              {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  inline-flex items-center gap-1.5
+                  px-3 py-1.5 rounded-md  
+                  text-xs font-medium
+                  border border-slate-200 dark:border-slate-700
+                  bg-white dark:bg-slate-900    
+                  text-slate-700 dark:text-slate-300
+                  transition
+                "
+              >
+                <ExternalLink size={14} />
+                Live Site
+              </a>
+            )}
+            </div>
+          </div>
 
           <ul className="space-y-2 mb-3">
             {project.description.map((point, i) => (

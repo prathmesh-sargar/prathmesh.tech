@@ -32,6 +32,10 @@ import webscraper from "../assets/skills/webscrap.png"
 import webhook from "../assets/skills/webhooks.jpg"
 import openai from "../assets/skills/openai.png"
 import serperapi from "../assets/skills/serper.png"
+import seo from "../assets/skills/SEO.png";
+import form from "../assets/skills/form.png";
+import pagespeed from "../assets/skills/pagespeed.png";
+import responsive from "../assets/skills/responsive.png";
 
 
 export const techMap = {
@@ -67,4 +71,9 @@ export const techMap = {
   "Webhooks": { label: "Webhooks", icon: webhook },
   "OpenAI API": { label: "OpenAI API", icon: openai },
   "Serper API": { label: "Serper API", icon: serperapi },
+  "SEO Optimization": { label: "SEO Optimization", icon: seo },
+  "Form Validation": { label: "Form Validation", icon: form },
+  "Performance Optimization": { label: "Performance Optimization", icon: pagespeed },
+  "Responsive Design": { label: "Responsive Design", icon: responsive },
+  
 };

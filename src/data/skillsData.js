@@ -21,6 +21,10 @@ import postmanLogo from "../assets/skills/postman.png";
 import prisma from "../assets/skills/prisma.png";
 import mongoose from "../assets/skills/mongoose.png";
 import shadcn from "../assets/skills/shadcn.png";
+import seo from "../assets/skills/SEO.png";
+import form from "../assets/skills/form.png";
+import pagespeed from "../assets/skills/pagespeed.png";
+import responsive from "../assets/skills/responsive.png";
 
 // SKILLS DATA
 export const skills = [
@@ -48,9 +52,14 @@ export const skills = [
   { name: "Firebase", icon: firebaseLogo },
 
   // Tools
+  { name: "SEO Optimization", icon: seo },
+  { name: "Form Validation", icon: form },
+  { name: "Performance Optimization", icon: pagespeed },
+  { name: "Responsive Design", icon: responsive },
   { name: "Git", icon: gitLogo },
   { name: "GitHub", icon: githubLogo },
   { name: "Postman", icon: postmanLogo },
   { name: "Shadcn UI", icon: shadcn },
   { name: "VsCode", icon: vsCodeLogo },
+
 ];

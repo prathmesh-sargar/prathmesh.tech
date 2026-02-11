@@ -1,7 +1,10 @@
 import { ExperienceData } from "../data/experienceData";
 import { techMap } from "../data/techMap";
+import { ExternalLink, Github } from "lucide-react";
 
 const ExperiencePage = () => {
+
+  console.log(" experience data: ", ExperienceData);
   return (
     <section className="pt-24 pb-16 px-4">
       {/* Header */}
@@ -62,12 +65,70 @@ const ExperiencePage = () => {
   <div className="space-y-6">
     {exp.projects.map((project, idx) => (
       <div key={idx}>
-        <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
+        <div className="md:flex md:justify-between items-start mb-2">
+         <div>
+           <h3 className="text-sm font-semibold text-gray-900 dark:text-white">
           {project.name}
         </h3>
         <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
           Client: {project.client}
         </p>
+         </div>
+         <div>
+                {(project.liveUrl || project.githubUrl) && (
+  <div className="flex flex-wrap gap-2 mt-3">
+    
+    {project.liveUrl && (
+      <a
+        href={project.liveUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+          inline-flex items-center gap-1.5
+          px-3 py-1.5 rounded-md
+          text-xs font-medium
+          border border-slate-200 dark:border-slate-700
+          bg-white dark:bg-slate-900
+          text-slate-700 dark:text-slate-300
+          hover:border-indigo-400 hover:text-indigo-600
+          transition
+        "
+      >
+        <ExternalLink size={14} />
+        Live Site
+      </a>
+    )}
+
+    {project.githubUrl && (
+      <a
+        href={project.githubUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+          inline-flex items-center gap-1.5
+          px-3 py-1.5 rounded-md
+          text-xs font-medium
+          border border-slate-200 dark:border-slate-700
+          bg-white dark:bg-slate-900
+          text-slate-700 dark:text-slate-300
+          
+          transition
+        "
+      >
+        <Github size={14} />
+        Source Code
+      </a>
+    )}
+
+  </div>
+)}
+         </div>
+
+        </div>
+  
+
+  
+
 
         <ul className="list-disc pl-5 space-y-2 text-sm text-gray-700 dark:text-gray-300 mb-3">
           {project.description.map((point, i) => (
@@ -79,6 +140,7 @@ const ExperiencePage = () => {
           {project.technologies.map((key, i) => {
             const tech = techMap[key];
             if (!tech) return null;
+            console.log("project : ", project.name, "tech: "  , tech);
 
             return (
               <span
@@ -91,8 +153,10 @@ const ExperiencePage = () => {
                 <img src={tech.icon} alt={tech.label} className="w-4 h-4" />
                 {tech.label}
               </span>
+              
             );
           })}
+          
         </div>
       </div>
     ))}
