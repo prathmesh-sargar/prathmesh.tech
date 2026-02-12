@@ -1,6 +1,7 @@
 import collabV from "../assets/companyLogo/collabV.jpg";
 import gspInnovations from "../assets/companyLogo/jsp.jpg";
 import freelance from "../assets/companyLogo/freelancer.jpg";
+import orinSystemsLogo from "../assets/companyLogo/orinSystemsLogo.jpeg";
 
 export const ExperienceData = [
   {
@@ -33,27 +34,6 @@ export const ExperienceData = [
           "Email Automation",
         ],
       },
-      {
-  name: "Orin Systems – Corporate Website",
-  client: "Orin Systems (Corporate Client)",
-  liveUrl: "https://orin-systems.vercel.app/",
-  githubUrl: "https://github.com/prathmesh-sargar/ORIN-SYSTEMS",
-  description: [
-    "Designed and developed a corporate-grade, high-performance company website focused on brand positioning, scalability, and conversion-driven layout structure.",
-    "Built a fully responsive frontend using React and Tailwind CSS with reusable UI components and optimized rendering for smooth performance across devices.",
-    "Implemented SEO-friendly structure, optimized asset loading, and lazy loading strategies to improve page performance and initial load time.",
-    "Applied input validation, sanitization, and secure handling of contact forms to prevent common vulnerabilities and protect client data.",
-    "Optimized website structure for maintainability and future scalability, enabling easy content updates and feature extensions.",
-  ],
-  technologies: [
-    "React",
-    "Tailwind CSS",
-    "Responsive Design",
-    "SEO Optimization",
-    "Performance Optimization",
-    "Form Validation",
-  ],
-},
       {
         name: "Client CRM Web Application",
         client: "Freelance",
@@ -93,6 +73,33 @@ export const ExperienceData = [
     ],
   },
 
+   {
+  id: "orin-systems",
+  role: "Software & Automation Developer",
+  company: "Orin Systems",
+  companyLogo: orinSystemsLogo, // import this like your other logos
+  type: "Remote",
+  date: "Jan 2026 – Present",
+  location: "Remote",
+  bullets: [
+  "Designed and developed the company website by translating business requirements into a clear UI/UX structure aligned with brand positioning and user conversion goals.",
+  "Built a fully responsive frontend using React and Tailwind CSS with reusable components and optimized rendering for consistent performance across devices.",
+  "Implemented SEO-friendly architecture, optimized asset loading, and lazy loading strategies to improve initial load performance.",
+  "Developed AI-based automation solutions including lead generation agents and social media automation workflows to reduce manual business operations.",
+  "Applied input validation, sanitization, and secure handling of contact forms to prevent common vulnerabilities and protect client data.",
+  "Structured the codebase for maintainability and scalability, enabling easier future updates and feature extensions."
+],
+  technologies: [
+    "React",
+    "GitHub",
+    "Tailwind CSS",
+    "Responsive Design",
+    "SEO Optimization",
+    "Performance Optimization",
+    "Form Validation",
+    "n8n"
+  ]
+},
   {
     id: "intern-gsp",
     role: "React.js Developer Intern",
@@ -115,7 +122,6 @@ export const ExperienceData = [
       "PostgreSQL",
     ],
   },
-
   {
     id: "intern-collab",
     role: "Software Trainee Intern",
