@@ -21,8 +21,8 @@ export const projectsData = [
     ],
     image: campusCompass,
     tags: ["React", "Node.js", "Express.js", "MongoDB", "Flask", "Redux Toolkit", "Docker", "GitHub Actions"],
-    liveUrl: "https://campus-compass-frontend-sepia.vercel.app/", // replace if different
-    githubUrl: "https://campus-compass-frontend-sepia.vercel.app/"
+    liveUrl: "https://campuscompass.prathmeshfolio.me", // replace if different
+    githubUrl: "https://github.com/prathmesh-sargar/CampusCompass"
   },
 
   {
@@ -38,7 +38,7 @@ export const projectsData = [
     ],
     image: skillSync,
     tags: ["React", "Redux Toolkit", "Node.js", "Express", "MongoDB"],
-    liveUrl: "https://skill-sync-beta-six.vercel.app/", // replace if different
+    liveUrl: "https://skillsync.prathmeshfolio.me", // replace if different
     githubUrl: "https://github.com/prathmesh-sargar/SkillSync"
   }
 ];
