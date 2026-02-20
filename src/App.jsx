@@ -14,6 +14,7 @@ import Skills from "./components/skills/Skills.jsx";
 import ProjectDetails from "./pages/ProjectDetails.jsx";
 import AchievementsPage from "./pages/AchievementsPage.jsx";
 // import Experience from "./components/experience/Experience.jsx";
+import BlogDetails from "./components/Blogs/BlogDetail.jsx"
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -46,6 +47,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/projects/:slug" element={<ProjectDetails />} />
             <Route path="/achievement" element={<AchievementsPage />} /> 
+            <Route path="/blogs/:slug" element={<BlogDetails />} />
           </Routes>
         </div>
 

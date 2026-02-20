@@ -7,6 +7,7 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/Footer";
 import HomeAchievements from "../components/achievements/HomeAchievements";
 import TeachingSection from "../components/TeachingSection";
+import Blog from "../components/Blogs/Blogs"
 
 const Home = () => {
   return (
@@ -16,7 +17,9 @@ const Home = () => {
       <section id="projects"><Projects /></section>
       <section id="skills"><Skills /></section>
       <HomeAchievements/>
+      <Blog/>
       <TeachingSection/>
+      
       {/* <section id="blogs"><Blogs /></section> */}
       <section id="contact"><Contact /></section>
       <Footer />

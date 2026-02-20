@@ -1,33 +1,46 @@
-import { motion } from "framer-motion";
 import BlogCard from "./BlogCard";
-import { BlogsData } from "../../data/blogsData";
+import { blogs } from "./blogData";
 
-const Blogs = () => {
+export default function Blogs() {
+  const featured = blogs.find((b) => b.featured);
+  const others = blogs.filter((b) => !b.featured);
+
   return (
-    <section className="w-full px-4 py-16 md:px-8 scroll-mt-8">
-      {/* TITLE and DESC */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-      >
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
-          Blogs
-        </h2>
-        <p className="text-lg text-gray-800 dark:text-gray-300 font-semibold mb-10 max-w-2xl">
-          Thoughts, insights, and experiences from my learning journey
-        </p>
-      </motion.div>
+    <section className="py-28 bg-white dark:bg-black transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-6">
 
-      {/* BLOGS CARD */}
-      <div className="grid md:grid-cols-2 gap-10">
-        {BlogsData.map((blog) => (
-          <BlogCard key={blog.id} blog={blog} />
-        ))}
+        {/* Header */}
+        <div className="mb-20 text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-black dark:text-white">
+            Engineering, Growth & Real-World Lessons
+          </h2>
+
+          <p className="mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-200">
+            Practical insights from building systems, shipping products,
+            teaching developers, and learning through real execution —
+            not theory.
+          </p>
+        </div>
+
+        {/* Content Layout */}
+        <div className="grid lg:grid-cols-3 gap-6 items-start">
+
+          {/* Featured Article */}
+          <div className="lg:col-span-2">
+            {featured && (
+              <BlogCard {...featured} featured />
+            )}
+          </div>
+
+          {/* Other Articles */}
+          <div className="space-y-10">
+            {others.map((blog) => (
+              <BlogCard key={blog.id} {...blog} />
+            ))}
+          </div>
+
+        </div>
       </div>
     </section>
   );
-};
-
-export default Blogs;
+}

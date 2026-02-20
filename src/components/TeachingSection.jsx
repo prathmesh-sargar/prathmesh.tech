@@ -6,7 +6,7 @@ const TeachingSection = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
           Teaching & Technical Content
         </h2>
-        <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
+        <p className="mt-2 text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
           Explaining real-world engineering concepts through practical,
           developer-focused videos.
         </p>
