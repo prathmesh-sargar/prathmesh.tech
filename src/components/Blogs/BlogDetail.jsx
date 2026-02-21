@@ -30,7 +30,7 @@ export default function BlogDetail() {
         />
 
         {/* Title */}
-        <h1 className="text-4xl md:text-5xl font-semibold tracking-tight leading-tight text-black dark:text-white">
+        <h1 className="text-3xl md:text-4xl font-semibold tracking-tight leading-tight text-black dark:text-white">
           {blog.title}
         </h1>
 

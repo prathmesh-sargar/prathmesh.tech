@@ -15,6 +15,7 @@ import ProjectDetails from "./pages/ProjectDetails.jsx";
 import AchievementsPage from "./pages/AchievementsPage.jsx";
 // import Experience from "./components/experience/Experience.jsx";
 import BlogDetail from "./components/Blogs/BlogDetail.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx"
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -38,6 +39,7 @@ function App() {
       >
         <div className="mx-2 max-w-[850px] bg-white dark:bg-black">
           <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          <ScrollToTop />
 
           <Routes>
             <Route path="/" element={<Home />} />

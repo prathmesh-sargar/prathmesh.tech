@@ -15,7 +15,7 @@ export default function Blogs() {
             Engineering, Growth & Real-World Lessons
           </h2>
 
-          <p className="mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-200">
+          <p className="mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
             Practical insights from building systems, shipping products,
             teaching developers, and learning through real execution —
             not theory.
