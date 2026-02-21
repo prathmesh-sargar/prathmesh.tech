@@ -1,11 +1,10 @@
 import { achievementsData } from "../../data/achievementsData";
-import collage from "../../assets/achievement/allpics.png"
 import { useNavigate } from "react-router-dom";
+import collageLight from "../../assets/achievement/collage-white.png";
+import collageDark from "../../assets/achievement/collage-black.png";
 
 const HomeAchievements = () => {
-  const images = achievementsData
-    .map((a) => a.photo)
-    .filter(Boolean);
+  const images = achievementsData.map((a) => a.photo).filter(Boolean);
 
   if (images.length === 0) return null;
   const navigate = useNavigate();
@@ -20,21 +19,34 @@ const HomeAchievements = () => {
           Achievements
         </h2>
         <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">
-          National-level wins, <span className="font-bold text-xl ">hackathons</span>, <span className="font-bold text-xl">Startup</span> pitches, and <span className="font-bold text-xl "><span className="font-bold text-xl ">technical events.</span></span>
+          National-level wins,{" "}
+          <span className="font-bold text-xl ">hackathons</span>,{" "}
+          <span className="font-bold text-xl">Startup</span> pitches, and{" "}
+          <span className="font-bold text-xl ">
+            <span className="font-bold text-xl ">technical events.</span>
+          </span>
         </p>
       </div>
 
       <section className="">
-  <div className="rounded-2xl border border-gray-200 dark:border-neutral-800 overflow-hidden">
-    <img
-      src={collage}
-      alt="Achievement moments collage"
-      className="w-full object-contain cursor-pointer"
-      onClick={() => navigate(`/achievement`)}
-    />
-  </div>
-</section>
+        <div className=" dark:border-neutral-800 overflow-hidden">
+          {/* Light Mode Image */}
+          <img
+            src={collageLight}
+            alt="Achievement moments collage"
+            className="w-full object-contain cursor-pointer block dark:hidden"
+            onClick={() => navigate(`/achievement`)}
+          />
 
+          {/* Dark Mode Image */}
+          <img
+            src={collageDark}
+            alt="Achievement moments collage"
+            className="w-full object-contain cursor-pointer hidden dark:block"
+            onClick={() => navigate(`/achievement`)}
+          />
+        </div>
+      </section>
     </section>
   );
 };
