@@ -15,7 +15,7 @@ const HomeAchievements = () => {
   return (
     <section className="pt-24 pb-20 px-4 max-w-6xl mx-auto">
       {/* Header */}
-      <div className="mb-10 text-center">
+      <div className="mb-10 ">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
           Achievements
         </h2>

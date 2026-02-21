@@ -1,12 +1,12 @@
 const TeachingSection = () => {
   return (
-    <section className="pt-24 pb-20 px-4 max-w-6xl mx-auto">
+    <section className="pt-24 pb-20 px-4 max-w-6xl ">
       {/* Header */}
-      <div className="mb-10 text-center">
+      <div className="mb-10 ">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
           Teaching & Technical Content
         </h2>
-        <p className="mt-2 text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
+        <p className="mt-2 text-lg text-gray-600 dark:text-gray-400 max-w-xl ">
           Explaining real-world engineering concepts through practical,
           developer-focused videos.
         </p>

@@ -6,11 +6,11 @@ export default function Blogs() {
   const others = blogs.filter((b) => !b.featured);
 
   return (
-    <section className="py-28 bg-white dark:bg-black transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-white dark:bg-black transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-2">
 
         {/* Header */}
-        <div className="mb-20 text-center max-w-3xl mx-auto">
+        <div className="mb-20 max-w-3xl ">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-black dark:text-white">
             Engineering, Growth & Real-World Lessons
           </h2>
@@ -23,7 +23,7 @@ export default function Blogs() {
         </div>
 
         {/* Content Layout */}
-        <div className="grid lg:grid-cols-3 gap-6 items-start">
+        <div className="grid lg:grid-cols-3 gap-4 items-start">
 
           {/* Featured Article */}
           <div className="lg:col-span-2">
