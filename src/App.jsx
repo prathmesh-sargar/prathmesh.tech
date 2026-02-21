@@ -14,7 +14,7 @@ import Contact from "./components/contact/Contact.jsx";
 import ProjectDetails from "./pages/ProjectDetails.jsx";
 import AchievementsPage from "./pages/AchievementsPage.jsx";
 // import Experience from "./components/experience/Experience.jsx";
-import BlogDetail from "./components/blogs/BlogDetail.jsx"
+import BlogDetail from "./components/Blogs/BlogDetail.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
