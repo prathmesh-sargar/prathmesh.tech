@@ -10,7 +10,7 @@ import { ToastContainer } from "react-toastify";
 import { DotBackground } from "./ui/lightswind/grid-dot-backgrounds.tsx";
 import { Tooltip } from "react-tooltip";
 import Contact from "./components/contact/Contact.jsx";
-import Skills from "./components/skills/Skills.jsx";
+// import Skills from "./components/skills/Skills.jsx";
 import ProjectDetails from "./pages/ProjectDetails.jsx";
 import AchievementsPage from "./pages/AchievementsPage.jsx";
 // import Experience from "./components/experience/Experience.jsx";
