@@ -29,7 +29,7 @@ function App() {
   return (
     <div className={`${darkMode ? "dark" : ""} bg-gray-50 dark:bg-gray-950`}>
       <DotBackground
-        dotSize={1}
+        dotSize={0}
         dotColor="#d4d4d4"
         darkDotColor="#404040"
         spacing={30}
