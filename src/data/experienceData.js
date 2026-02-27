@@ -106,7 +106,7 @@ export const ExperienceData = [
     company: "GSP Innovations",
     companyLogo: gspInnovations,
     type: "Hybrid",
-    date: "Nov 2025 – Jan 2026",
+    date: "Aug 2025 – Jan 2026",
     location: "Hybrid",
     bullets: [
       "Designed and developed a modular CRM frontend using React with reusable components and dynamic forms.",
