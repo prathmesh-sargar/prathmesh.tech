@@ -31,13 +31,12 @@ const ResumeButton = () => {
 
               <div className="flex items-center gap-4">
                 <a
-                  href="https://drive.google.com/file/d/140BDA4AL3bDHIWU_Fzp9BQxj9qB33IPR/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1ttYmk-ZY6HXYreNda_zmSzTHC_-c5vNQ/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm font-medium underline"
                 >
                   Open in Drive
-                </a>
 
                 <button
                   onClick={() => setOpen(false)}
