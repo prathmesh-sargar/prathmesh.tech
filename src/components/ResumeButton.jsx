@@ -49,7 +49,7 @@ const ResumeButton = () => {
 
             {/* RESUME PREVIEW */}
             <iframe
-              src="https://drive.google.com/file/d/140BDA4AL3bDHIWU_Fzp9BQxj9qB33IPR/preview?usp=sharing"
+              src="https://drive.google.com/file/d/1ttYmk-ZY6HXYreNda_zmSzTHC_-c5vNQ/preview?usp=sharing"
               className="w-full h-full"
               title="Resume Preview"
             />
