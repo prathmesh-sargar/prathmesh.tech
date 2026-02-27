@@ -37,7 +37,7 @@ const ResumeButton = () => {
                   className="text-sm font-medium underline"
                 >
                   Open in Drive
-
+                </a>
                 <button
                   onClick={() => setOpen(false)}
                   className="p-1 rounded hover:bg-gray-100 dark:hover:bg-neutral-800"
